@@ -1,6 +1,10 @@
 # Password-dictionary
 密码字典渗透工具
 密码字典生成与查找工具
+PSWD-1.0.py是字典生成程序这个版本是没有关键词提示的
+PSWD-2.0.py是字典生成程序这个版本是有关键词提示的
+Check-PSWD.py是验证程序用于验证txt字典里是否有你想要的密码
+
 Password Dictionary Generator & Checker
 一个基于 Python 的实用工具，帮助用户生成高度自定义的密码字典文件，并提供快速密码查找功能，适用于渗透测试、安全自查或密码强度验证场景。
 
@@ -50,7 +54,7 @@ tqdm：显示进度条，提升用户体验。
 bash
 复制
 # 运行生成器
-python generate_passwords.py
+python PSWD-1.0.py
 
 # 示例输入：
 请输入关键信息（例如人名、生日、手机号等），输入 'done' 结束：
@@ -66,7 +70,7 @@ python generate_passwords.py
 bash
 复制
 # 运行查找工具
-python find_password.py
+python Check-PSWD.py
 
 # 示例输入：
 请输入密码字典文件的路径（例如：passwords.txt）：my_passwords.txt
